@@ -86,10 +86,28 @@ ii. 如果node是分支节点，如果key为空，返回分支节点的value；�
 iii. 如果node是叶子节点，返回node[1] if key == curr_key else ‘’
 
 iv. 如果node是扩展节点，如果key以curr_key开头，递归查找node的子节点，即调用_get(self._decode_to_node(node[1]), key[len(curr_key):])；否则，说明key不在以node为根的子树里，返回空
+
+### 4.insert
+插入操作基于查找完成，首先找到与新插入节点拥有最长相同路径前缀的节点，之后基于此节点将剩下的节点进行封装插入。
 # 实现方式
+1.首先在MPT_Node.h中定义结构体，里面包括：prefix、shared_nibbles、value、leaf（是否是叶节点）以及子节点，以此作为 树上的单个节点。
 
-1.根据信息，求取信息的hash值
+2.之后根据课堂例子
+1）根据信息，求取信息的hash值
 
-2.将hash值作为路径对hash值所对应的值进行记录
+2）将hash值作为路径对hash值所对应的值进行记录
+
+创建具体的MPT。
+
+3.存在性证明以及不存在性证明。
 # 实验结果
 
+![image](https://github.com/jlwdfq/project-22/assets/129512207/45b1bc3c-940e-4b95-a126-7e24b06d25c3)
+# 实验环境
+Windows10
+
+PYCHARM 2022
+
+CPU：11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# 小组分工 
+戴方奇202100460092 单人组完成project22
