@@ -1,4 +1,5 @@
-![4e9f18c80b532bae708a55e34f2706fe_1460364-20181128201742562-1038078308](https://github.com/jlwdfq/project-22/assets/129512207/872e89b7-acfa-4a37-9c74-6eb1022abbd9)# project-22
+
+# project-22
 research report on MPT
 
 # What is MPT  
