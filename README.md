@@ -92,7 +92,8 @@ iv. 如果node是扩展节点，如果key以curr_key开头，递归查找node的
 # 实现方式
 1.首先在MPT_Node.h中定义结构体，里面包括：prefix、shared_nibbles、value、leaf（是否是叶节点）以及子节点，以此作为 树上的单个节点。
 
-2.之后根据课堂例子
+2.根据课堂例子内容：
+
 1）根据信息，求取信息的hash值
 
 2）将hash值作为路径对hash值所对应的值进行记录
